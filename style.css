@@ -1,0 +1,25 @@
+
+        /* Custom CSS for progress bar thumb */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #3b82f6;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        /* Animation for rotating album art */
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .rotate {
+            animation: rotate 20s linear infinite;
+        }
+        
+        .paused {
+            animation-play-state: paused;
+        }
+  
